@@ -1,4 +1,4 @@
-# My solution for the otto product classification kaggle challenge.
+# Otto product classification.
 
 In order to run the solution please follow these steps:
 
