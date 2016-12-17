@@ -3,7 +3,7 @@ import pandas as pd
 import sampling
 
 allData = pd.DataFrame.from_csv("train.csv");
-testData = pd.DataFrame.from_csv("test.csv");
+# testData = pd.DataFrame.from_csv("test.csv");
 
 train_sample, test_sample, validate_sample = sampling.sample_dataset(allData)
 

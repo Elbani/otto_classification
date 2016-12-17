@@ -4,7 +4,7 @@ import seaborn as sns
 sns.set_style('whitegrid')
 
 train = pd.DataFrame.from_csv("train.csv");
-test = pd.DataFrame.from_csv("test.csv");
+# test = pd.DataFrame.from_csv("test.csv");
 
 
 # Plot summation for every product feature
