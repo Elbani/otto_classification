@@ -1,5 +1,7 @@
 # Otto product classification.
 
+My 2 cents trying to solve the otto product classification challenge in kaggle: https://www.kaggle.com/c/otto-group-product-classification-challenge
+
 In order to run the solution please follow these steps:
 
 1. Download the train.csv file here: https://www.kaggle.com/c/otto-group-product-classification-challenge/data
