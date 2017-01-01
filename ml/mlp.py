@@ -6,10 +6,10 @@ from sklearn.neural_network import MLPClassifier
 # Multi-Layer Perceptron
 def mlp_multiclass_classifier(train, train_labels, validate, validate_labels):
     clf = MLPClassifier(solver='adam', alpha=1e-5,
-                        hidden_layer_sizes=(2000,), random_state=1)
+                        hidden_layer_sizes=(100,), random_state=1)
     clf.fit(train, train_labels)
     predicted_labels = clf.predict(validate)
-    print "Neural Network"  # 0.835673164327 for 1000 hidden layers
+    print "Neural Network"
     print str(metrics.accuracy_score(validate_labels, predicted_labels))
 
 
@@ -24,8 +24,8 @@ def mlp_probabilistic_classifier(train, train_labels, validate, validate_labels)
     train_labels = label_encode.fit_transform(train_labels)
 
     clf = MLPClassifier(solver='adam', alpha=1e-5,
-                        hidden_layer_sizes=(1000,), random_state=1)
+                        hidden_layer_sizes=(100,), random_state=1)
     clf.fit(train, train_labels)
     predicted_labels = clf.predict_proba(validate)
-    print "Neural Network LogLoss"  # 0.835673164327 for 1000 hidden layers
+    print "Neural Network LogLoss"
     print str(metrics.log_loss(validate_labels, predicted_labels))

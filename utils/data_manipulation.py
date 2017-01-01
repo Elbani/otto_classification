@@ -2,7 +2,7 @@ import pandas as pd
 
 import sampling
 
-allData = pd.DataFrame.from_csv("train.csv");
+allData = pd.DataFrame.from_csv("../data/train.csv");
 # testData = pd.DataFrame.from_csv("test.csv");
 
 train_sample, test_sample, validate_sample = sampling.sample_dataset(allData)

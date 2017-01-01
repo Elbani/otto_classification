@@ -3,7 +3,7 @@ import seaborn as sns
 
 sns.set_style('whitegrid')
 
-train = pd.DataFrame.from_csv("train.csv");
+train = pd.DataFrame.from_csv("../data/train.csv");
 # test = pd.DataFrame.from_csv("test.csv");
 
 
